@@ -2,12 +2,13 @@
 public class Calculator {
 
 
+    private Currency localCurrency;
+
     public Calculator() {
+        this.localCurrency = new Currency();
     }
 
-    public Currency getMySomething() {
-        return new Currency();
+    public void setItUp(Currency localCurrencyFromUser) {
+        this.localCurrency = localCurrencyFromUser;
     }
-
-
 }
